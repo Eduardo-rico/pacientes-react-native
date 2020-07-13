@@ -1,41 +1,24 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
-
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {Text, View, StyleSheet} from 'react-native';
 
 const App = () => {
   return (
-    <>
-      <Text style={styles.parrafo}>Hola mundo!</Text>
-    </>
+    <View style={styles.contenedor}>
+      <Text style={styles.titulo}>Administrador De Citas</Text>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  parrafo: {
+  contenedor: {
+    backgroundColor: '#AA076B',
+    minHeight: '100%',
+  },
+  titulo: {
+    marginTop: 40,
+    fontSize: 24,
+    fontWeight: 'bold',
     textAlign: 'center',
-    marginTop: 100,
   },
 });
 
